@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+    <!-- 這裡可以保留主題的其他樣式引用 -->
+    {{ content_for_header }}  <!-- 保留這一行，這會包含主題所需的額外資源 -->
 </head>
 <body>
     <header>
@@ -11,7 +13,7 @@
     </header>
 
     <main>
-        {{ content }}  <!-- 🚀 這行確保內容會顯示 -->
+        {{ content }}  <!-- 保證這一行顯示頁面內容 -->
     </main>
 
     <footer>
