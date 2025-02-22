@@ -13,7 +13,7 @@ title: 首頁
 {% endfor %}
 
 ## 🔥 推薦閱讀  
-- [為什麼獨立思考很重要？](./thinking.md)  
+- [翻牆軟體下載](./vpn.md)  
 - [科技如何影響未來社會？](./future.md)  
 - [哲學與日常：如何理性決策](./philosophy.md)  
 
