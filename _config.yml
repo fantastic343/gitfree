@@ -1,4 +1,4 @@
-theme: minima
+theme: theme: jekyll-theme-minimal  # 或你使用的其他主題名稱
 markdown: kramdown
 permalink: pretty
 title: gitfree
