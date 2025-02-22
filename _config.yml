@@ -1,6 +1,6 @@
-theme: theme: jekyll-theme-minimal  # 或你使用的其他主題名稱
+theme: jekyll-theme-minimal  # 或你使用的其他主題名稱
 markdown: kramdown
 permalink: pretty
 title: gitfree
-description: 提供獨立、客觀的觀點與深度思考
+description: 提供獨立客觀的觀點
 paginate: 10  # 每頁顯示 10 篇文章
