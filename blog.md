@@ -1,19 +1,28 @@
 ---
-layout: default
-title: 文章列表
-pagination: true
+layout: page
+title: "獨立觀點&分享"
+permalink: /blog/
 ---
 
-{% for post in paginator.posts %}
-- [{{ post.title }}]({{ post.url }}) ({{ post.date | date: "%Y-%m-%d" }})
-{% endfor %}
+# 相關文章
 
-<!-- 分頁導航 -->
-<div>
+以下是我的一些作品：
+
+<ul>
+  {% for post in paginator.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      <p>{{ post.excerpt }}</p>
+    </li>
+  {% endfor %}
+</ul>
+
+<div class="pagination">
   {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}">« 上一頁</a>
+    <a href="{{ paginator.previous_page_path }}">上一頁</a>
   {% endif %}
+
   {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}">下一頁 »</a>
+    <a href="{{ paginator.next_page_path }}">下一頁</a>
   {% endif %}
 </div>
