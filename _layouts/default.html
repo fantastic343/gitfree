@@ -1,1 +1,21 @@
-{% include footer.html %}
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+</head>
+<body>
+    <header>
+        <h1>我的網站</h1>
+    </header>
+
+    <main>
+        {{ content }}  <!-- 🚀 這行確保內容會顯示 -->
+    </main>
+
+    <footer>
+        <p>© 2025 我的網站. All rights reserved.</p>
+    </footer>
+</body>
+</html>
