@@ -5,4 +5,4 @@ title: gitfree
 description: 提供獨立客觀的觀點
 paginate: 10  # 每頁顯示 10 篇文章
 minima:
-  skin: classic
+  skin: auto
