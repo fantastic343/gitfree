@@ -6,3 +6,5 @@ description: 提供獨立客觀的觀點
 paginate: 10  # 每頁顯示 10 篇文章
 minima:
   skin: auto
+paginate: 5  # 每頁顯示 5 篇文章
+paginate_path: "/blog/page:num/"  # 分頁 URL 路徑
