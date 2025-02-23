@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Docsify</title>
+  <!-- Docsify 样式 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify/themes/vue.css">
+  <!-- Docsify JavaScript -->
   <script src="https://cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  <!-- Docsify 自动侧边栏插件 -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify-auto-sidebar@1.1.0/dist/docsify-auto-sidebar.min.js"></script>
 </head>
 <body>
   <div id="app"></div>
@@ -13,10 +17,16 @@
   <script>
     window.$docsify = {
       name: 'gitfree',
-      repo: '',  // 你的 GitHub Repo 地址
-      loadSidebar: true  // 启用侧边栏加载
-      loading: false,  // 禁用加载动画
-    }
+      repo: 'https://github.com/gitflee/gitflee.github.io',  // 你的 GitHub Repo 地址
+      loadSidebar: true,  // 启用侧边栏加载
+      loading: false, // 禁用加载动画
+      plugins: [
+        DocsifyAutoSidebar({
+          maxDepth: 2,  // 侧边栏显示最大标题层级
+          exclude: ['README.md']  // 排除首页 README.md
+        })
+      ]
+    };
   </script>
 </body>
 </html>
