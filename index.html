@@ -4,42 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GitFlee's Blog</title>
-  
   <!-- Docsify 样式 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4.12.0/themes/vue.css">
-  
   <!-- Docsify 核心脚本 -->
   <script src="https://cdn.jsdelivr.net/npm/docsify@4.12.0/lib/docsify.min.js"></script>
-  
   <!-- 引入 autosidebar 插件 -->
   <script src="https://cdn.jsdelivr.net/npm/docsify-auto-sidebar@1.1.0/dist/docsify-auto-sidebar.min.js"></script>
-
   <script>
     window.$docsify = {
-      name: 'GitFlee\'s Blog',      // 自定义博客名称
-      repo: 'https://github.com/gitflee/gitflee.github.io',  // 设置仓库地址
-      loadSidebar: true,            // 启用 Docsify 的侧边栏
-      search: {                      // 启用搜索功能
-        maxAge: 86400000,           // 设置搜索缓存有效期
-        paths: 'auto',               // 自动检索页面中的内容
-        placeholder: 'Search...',    // 搜索框占位符
-      },
-      subMaxLevel: 2,               // 最大标题层级
-      auto2top: true,               // 点击侧边栏自动滚动到页面顶部
+      name: 'GitFlee\'s Blog',
+      repo: 'https://github.com/gitflee/gitflee.github.io',
+      loadSidebar: true, // 启用侧边栏功能
       plugins: [
-        DocsifyAutoSidebar()        // 启用 autosidebar 插件
+        DocsifyAutoSidebar() // 启用 autosidebar 插件
       ]
     }
   </script>
-
-  <!-- 可选：引入自定义样式或其他插件 -->
-  <style>
-    /* 自定义样式 */
-    .content {
-      margin: 20px;
-    }
-  </style>
-
 </head>
 <body>
   <div id="app"></div>
