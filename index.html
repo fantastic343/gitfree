@@ -1,27 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>gitfree</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Docsify</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify/themes/vue.css">
   <script src="https://cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/docsify-auto-sidebar@1.1.0/dist/docsify-auto-sidebar.min.js"></script>
 </head>
 <body>
+  <div id="app"></div>
 
   <script>
     window.$docsify = {
       name: 'gitfree',
       repo: 'https://github.com/gitflee/gitflee.github.io',  // 你的 GitHub Repo 地址
-      loadSidebar: true,  // 启用侧边栏加载
-      plugins: [
-        DocsifyAutoSidebar({
-          maxDepth: 2,  // 侧边栏显示最大标题层级
-        })
-      ]
-    };
+      loadSidebar: true  // 启用侧边栏加载
+    }
   </script>
-</body>
-</html>
 </body>
 </html>
