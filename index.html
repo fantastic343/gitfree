@@ -17,6 +17,19 @@
             // 其他配置项...
             loadNavbar: true,
             subMaxLevel: 2,
+                sidebarDisplayLevel: 1, // 控制默認展開層級
+    plugins: [
+      function(hook, vm) {
+        hook.doneEach(function() {
+          // 保持當前頁面的目錄展開
+          var active = document.querySelector('.sidebar-nav li.active');
+          if (active) {
+            var parent = active.parentElement;
+            while (parent && parent.classList.contains('collapse')) {
+              parent.classList.add('open');
+              parent = parent.parentElement;
+            }
+          }
         };
     </script>
     <script src="https://cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
