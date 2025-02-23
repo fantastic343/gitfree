@@ -1,27 +1,30 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GitFlee's Blog</title>
-  <!-- Docsify 样式 -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4.12.0/themes/vue.css">
-  <!-- Docsify 核心脚本 -->
-  <script src="https://cdn.jsdelivr.net/npm/docsify@4.12.0/lib/docsify.min.js"></script>
-  <!-- 引入 autosidebar 插件 -->
+  <meta charset="utf-8">
+  <title>我的 Docsify 博客</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify/themes/vue.css">
+  <script src="https://cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/docsify-auto-sidebar@1.1.0/dist/docsify-auto-sidebar.min.js"></script>
-  <script>
-    window.$docsify = {
-      name: 'GitFlee\'s Blog',
-      repo: 'https://github.com/gitflee/gitflee.github.io',
-      loadSidebar: true, // 启用侧边栏功能
-      plugins: [
-        DocsifyAutoSidebar() // 启用 autosidebar 插件
-      ]
-    }
-  </script>
 </head>
 <body>
+  <div id="app"></div>
+
+  <script>
+    window.$docsify = {
+      name: '我的博客',
+      repo: 'https://github.com/gitflee/gitflee.github.io',  // 你的 GitHub Repo 地址
+      loadSidebar: true,  // 启用侧边栏加载
+      plugins: [
+        DocsifyAutoSidebar({
+          maxDepth: 2,  // 侧边栏显示最大标题层级
+          exclude: ['README.md']  // 排除首页 README.md
+        })
+      ]
+    };
+  </script>
+</body>
+</html>
   <div id="app"></div>
 </body>
 </html>
