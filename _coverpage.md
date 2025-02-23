@@ -6,4 +6,3 @@
 - ⚡ 快速構建
 
 [開始閱讀](README.md)
-![](/images/cover-background.jpg)
