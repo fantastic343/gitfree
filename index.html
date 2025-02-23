@@ -10,13 +10,16 @@
     <div id="app">加載中...</div>
     <script>
         window.$docsify = {
-            name: '我的文檔',
-            repo: '',
             loadSidebar: true  // 啟用側邊欄（如果有 _sidebar.md）
             coverpage: true   // 啟用封面（如果有 _coverpage.md）
             onlyCover: true  // 僅顯示封面
-            subMaxLevel: 0    
-          }
+            subMaxLevel: 0 
+            sidebarCollapse: true
+            name: 'My Docs Site',
+            repo: 'https://github.com/gitflee/gitflee.github.io',
+            plugins: [
+              DocsifyAutoSidebar() // 插件加載
+            ]
         };
     </script>
     <script src="//unpkg.com/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
