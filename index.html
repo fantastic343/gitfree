@@ -14,17 +14,6 @@
             repo: '',
             loadSidebar: true,  // 啟用側邊欄（如果有 _sidebar.md）
             coverpage: true,    // 啟用封面（如果有 _coverpage.md）
-            ready: function () {
-      fetch('https://api.github.com/repos/gitflee/gitflee.github.io/contents/posts')  // GitHub API 地址，獲取所有文章
-        .then(response => response.json())
-        .then(data => {
-          let postList = document.querySelector('#post-list');  // 在頁面中放置文章列表的容器
-          data.forEach(item => {
-            let listItem = document.createElement('li');
-            listItem.innerHTML = `<a href="posts/${item.name}">${item.name.replace('.md', '')}</a>`;
-            postList.appendChild(listItem);
-          });
-        });
         };
     </script>
     <script src="https://cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
