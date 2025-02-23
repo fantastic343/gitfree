@@ -16,7 +16,3 @@ title: 首頁
 - [翻牆軟體下載](./vpn.md)  
 - [科技如何影響未來社會？](./future.md)  
 - [哲學與日常：如何理性決策](./philosophy.md)  
-
----
-
-📖 [關於我們](./about.md) | 📬 [聯絡我們](./contact.md)
