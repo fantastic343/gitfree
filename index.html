@@ -5,17 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Docify</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify/themes/vue.css">
+    
+    <!-- Docsify 的插件：auto-sidebar -->
+    <script src="https://cdn.jsdelivr.net/npm/docsify-plugin-auto-sidebar@1.0.2/dist/auto-sidebar.min.js"></script>
 </head>
 <body>
     <div id="app">加載中...</div>
+
     <script>
         window.$docsify = {
             name: 'gitfree',
-            repo: '',
+            repo: '', // 如果需要顯示 GitHub 倉庫的連結，可以填寫此處
             loadSidebar: true,  // 啟用側邊欄（如果有 _sidebar.md）
             coverpage: true,    // 啟用封面（如果有 _coverpage.md）
+            
+            // 啟用自動生成側邊欄（會根據目錄自動折疊）
+            plugins: [
+                autoSidebar({
+                    // 配置：這裡設定了折疊功能
+                    auto: true,
+                    collapse: true  // 啟用折疊功能
+                })
+            ]
         };
     </script>
+
     <script src="https://cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
 </body>
 </html>
