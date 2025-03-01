@@ -1,6 +1,6 @@
 <!-- docs/_sidebar.md -->
 
-* [首頁](README.md)
+* [首頁](/README.md)
 * [所有文章](_side/blog.md)
 * 資源下載
   * [翻牆工具](_side/vpn.md)
