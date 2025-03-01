@@ -6,6 +6,4 @@
 - 🔥 資源分享
 - ⚡ 快速構建
 
-[開始閱讀](/docs/)
-
-[GitHub](https://github.com/gitflee/gitflee.github.io)
+[開始閱讀](/docs/README.md)
